@@ -43,7 +43,7 @@ import seaborn as sns
 # Nog 4 csv's, kunnen alvast wat onderzoek naar doen en wat cleaning gebeuren
 
 
-df = pd.read_csv('"../groep-19/blob/main/time_series_covid_19_confirmed.csv"',index_col='Country/Region')
+df = pd.read_csv('time_series_covid_19_confirmed.csv', index_col='Country/Region')
 df.drop(['Province/State','Lat','Long'], axis=1, inplace=True)
 #df.dropna(axis=1, thresh=1, subset="Province/State")
 print(df)
